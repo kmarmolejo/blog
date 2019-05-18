@@ -7,10 +7,12 @@
 
 h1 {
 	font-family: 'Playfair Display', serif;
+	color: #293241;
 }
 
 p {
 	font-family: 'Montserrat', sans-serif;
+	color: #293241;
 }
 
 /* HEADER */
@@ -27,6 +29,29 @@ header {
 
 .tagline {
 	padding-top: 10px;
+	padding-bottom: 2px;
+}
+
+.hashtags {
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 30px;
+}
+
+.hashtags a {
+	background: #fff;
+	border: 2px solid #293241;
+	border-radius: 6px;
+	color: #293241;
+	padding: 7px;
+	text-decoration: none;
+}
+
+.hashtags a:hover {
+	color: #ffffff;
+	background: #f6b93b;
+	border-color: #f6b93b;
+	transition: all 0.4s ease 0s;
 }
 
 /* PHOTO FLEX GRID */
@@ -74,19 +99,19 @@ header {
 /* FOOTER*/
 
 footer {
-	
+	padding: 20px 0;
 }
 
 footer a {
-	color: #000;
+	color: #293241;;
 }
 
 footer a:hover {
-	color: gray;
+	color: #f6b93b;
 }
 
 .about-text {
-	
+	max-width: 400px;
 }
 
 /* MEDIA QUERY*/
@@ -104,8 +129,7 @@ footer a:hover {
 		
 	}
 	
-	.about {
-		max-width: 100px;
+	.about-text {
 	}
 }
 
@@ -124,5 +148,9 @@ footer a:hover {
 	
 	.column {
 		flex: 100%
+	}
+	
+	.about-text {
+	
 	}
 }
